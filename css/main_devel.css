@@ -1,0 +1,396 @@
+.uploadFile {
+  width:                  400px;
+  height:                 100px;
+  margin:                 auto;
+  text-align:             center;
+}
+
+body, td, div, span, a {
+  color:                  black;
+}
+
+body, div {
+  background:             rgb(227, 218, 201);
+}
+
+html,head,body {
+  height:                 100%;
+  width:                  100%;
+}
+
+.content {
+  min-height:             500px;
+  margin-left:            350px;
+  padding-left:           10px;
+}
+
+#curtains {
+  position:               fixed;
+  width:                  100%;
+  height:                 100%;
+  top:                    0px;
+  left:                   0px;
+  z-index:                -1;
+  background-color:       rgb(255,255,255);
+  opacity:                0;
+}
+
+#curtainsContainer {
+  position:               absolute;
+  margin:                 auto;
+  border:                 1px solid black;
+  z-index:                -1;
+  padding:                10px;
+  padding-left:           60px;
+  min-height:             30px;
+  padding-top:            20px;
+  opacity:                0;
+  top:                    0px;
+  left:                   0px;
+}
+
+.menu {
+  position:               fixed;
+  float:                  left;
+  top:                    20px;
+  left:                   0px;
+  z-index:                100;
+  -webkit-border-radius:  0px 10px 10px 0px;
+     -moz-border-radius:  0px 10px 10px 0px;
+          border-radius:  0px 10px 10px 0px;
+  width:                  250px;
+  border:                 1px solid black;
+  background:             rgba(0,0,0,0.1);
+}
+
+.leftFilters {
+  margin-top:             20px;
+  position:               fixed;
+  left:                   0px;
+  padding: 5px;
+  background:             rgb(204,196,181);
+}
+
+.menu ul {
+  list-style:             none;
+  padding:                0px;
+  margin:                 0px;
+  width:                  250px;
+  z-index:                302;
+}
+
+.menu ul li {
+}
+
+.menu ul li a {
+  display:                block;
+  line-height:            22px;
+  padding-left:           15px;
+}
+
+.menu ul li a:hover { 
+  background:             rgba(255,255,255,0.3);
+  text-decoration:        none;
+  font-weight:            bold;
+  color:                  black;
+}
+
+.filter_selection {
+  background:             rgb(204,196,181);
+}
+
+input {
+  width:                  190px;
+}
+
+input[type=checkbox], input[type=radio] {
+  width:                  13px;
+}
+
+select {
+  width:                  225px;
+  padding:                0px;
+  background:             rgb(143, 137, 127 );
+}
+
+.btn {
+  color:                  black;
+  font-weight:            bold; 
+}
+
+.btn-success  {
+  color: black;
+}
+
+input, select, textarea {
+  color:                  black !important;
+} 
+
+.pagination {
+  height:                 30px;
+  min-width:              150px;
+  bottom:                 0px;
+  position:               fixed;
+  padding:                4px 10px 0px 10px;
+  text-align:             center;
+  -webkit-border-radius:  10px 10px 0px 0px;
+     -moz-border-radius:  10px 10px 0px 0px;
+          border-radius:  10px 10px 0px 0px;
+  border:                 1px solid black;
+  margin:                 0px;
+  z-index:                301;
+  bottom:                 0px;  
+}
+
+span.formControls {
+  z-index:                10; 
+  top:                    0px;
+  right:                  80px;
+  height:                 30px;
+  position:               fixed;
+  padding:                10px;
+  background:             rgba(0,0,0,0.1);
+  border:                 1px solid black;
+  -webkit-border-radius: 0px 0px 10px 10px;
+   -moz-border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 10px 10px;
+}
+
+.filters:not(.leftFilters) {
+  position: fixed;
+  top: 20px;
+  right: -331px; 
+  width: 361px;
+  z-index: 400;
+}
+
+.filter_header p {
+  width: 1px;
+  word-wrap:break-word;
+  margin:auto;
+  font-weight: bold;
+}
+
+.filter_header {
+  cursor:pointer;
+  height: 130px;
+  width: 30px;
+  padding-top: 5px;
+  text-align:center;
+  -webkit-border-radius: 10px 0px 0px 10px;
+   -moz-border-radius: 10px 0px 0px 10px;
+        border-radius: 10px 0px 0px 10px;
+  float:left;
+  background: rgb(204,196,181);
+  z-index:301;
+}
+
+.picture_header {
+  height: 110px;
+}
+
+div.picture img {
+  max-width: 280px;
+}
+
+.export_header {
+  height:165px;
+}
+
+
+.filters:not(.leftFilters) .filter_selection {
+  float:left;
+  padding:7px;
+  z-index: 300;
+  width:317px;
+}
+
+#headerList a, #headerList a:hover {
+  width:100px;
+  background:             transparent;
+}
+
+#headerList th div, #headerList th span {
+  background:             transparent;
+}
+
+#headerList .sort a {
+  width:90px;
+}
+
+div.clear {
+  background: transparent;
+}                         
+
+#curtainsContainer.success {
+  background: url(/images/success-icon.png) no-repeat 10px 10px, rgb(227, 218, 201);
+  color:black;
+}
+
+#curtainsContainer.error {
+  background: url(/images/warning-icon.png) no-repeat 10px 10px, rgb(227, 218, 201);
+  color:black;
+}
+
+.sort {
+  cursor: pointer;
+}
+
+div.descending span {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #FFF;
+}
+
+div.ascending span {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #FFF;
+}
+
+.sort div {
+  float:left;
+}
+
+.sort div:last-child {
+  width: 20px;
+  padding-left: 5px;
+  height: 10px;
+  vertical-align:top;
+}
+
+.sort div.ascending {
+  padding-top:10px;
+}
+
+.sort div.descending {
+  margin-top: -10px;
+}
+
+.formBtn {
+	border: 1px solid #555;
+   background: rgba(0, 0, 0, 0.3);
+   padding: 4px 16px;
+  -webkit-box-shadow: outset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: outset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: outset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.formBtn:hover {
+  text-decoration:        none;
+  background:             rgba(0, 0, 0, 0.5);
+}
+
+#listItems tr {
+  cursor:                 pointer;
+  color:                  rgb(227, 218, 201);
+}
+
+#listItemsContainer {
+  position:               fixed;
+  background:             rgb(227, 218, 201);
+  margin-top:             -1px;
+  border:                 0px;
+}
+
+#headerList th {
+  height:                 20px;
+  margin:                 0px;
+  white-space:            nowrap;
+}
+
+
+.currentUnder td, td.tdHover, th.tdHover {
+  background:             rgba(0,0,0,0.1);
+}
+
+div.content > table td {
+  border-bottom: 1px solid #1D1E21;
+  border-top: 1px solid #4A4A54;
+}
+
+.itemLists li {
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.itemLists li:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.itemLists {
+  margin-left: 0px;
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+#listItems a, #listItems a:hover, #headerList a, #headerList a:hover {
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  display:block;
+  text-decoration:none;
+}
+
+#listItems a {
+  width:120px;
+}
+
+#headerList tr th {
+  width:120px;
+}
+
+.login-form {
+  background: transparent;
+}
+
+.export {
+  background: transparent;
+}
+
+.export > div {
+  background: rgb(204,196,181);
+}
+.login-home {
+  background: rgb(227, 218, 201);
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    black;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    black;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    black;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    black;
+}
+
+.leftFilters .filter_header {
+  float:right;
+  margin-right:-35px;
+  height: 125px;
+  padding-left: 0px;
+  -webkit-border-radius: 0px 10px 10px 0px;
+   -moz-border-radius: 0px 10px 10px 0px;
+        border-radius: 0px 10px 10px 0px;
+  margin-top: -5px;
+}
+
+.leftFilters .filter_header p {
+  margin-left: 8px;
+}

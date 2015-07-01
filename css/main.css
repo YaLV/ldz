@@ -1,0 +1,440 @@
+.uploadFile {
+  width: 400px;
+  height: 100px;
+  margin: auto;
+  text-align:center;
+}
+
+.content td, .content th, .content input, .content a:not(.btn):not(.currentUnder td a), .content div {
+  color:black !important;
+}
+
+.filters th, .filters td, .filters input, .pagination input {
+  color:white !important;
+}
+
+html,head,body {
+  height:                 100%;
+  width:                  100%;
+  background-attachment: fixed;
+}
+
+.content {
+  min-height: 500px;
+}
+
+
+
+#curtains {
+  position:               fixed;
+  width:                  100%;
+  height:                 100%;
+  top:                    0px;
+  left:                   0px;
+  z-index:                -1;
+  background-color:       rgb(255,255,255);
+  opacity:                0;
+}
+
+#curtainsContainer {
+  position:               absolute;
+  margin:                 auto;
+  border:                 1px solid black;
+  z-index:                -1;
+  padding:                10px;
+  padding-left:           60px;
+  min-height:             30px;
+  padding-top:            20px;
+  opacity:                0;
+  top:                    0px;
+  left:                   0px;
+}
+
+#headerList {
+  -webkit-border-radius: 10px 0px 0px 10px;
+   -moz-border-radius: 10px 0px 0px 10px;
+        border-radius: 10px 0px 0px 10px;
+}
+
+#headerList th, #listItems td {
+  width: 125px;
+}
+
+.filter_table th {
+  font-size: 12px;
+}
+
+#listItems td {
+  white-space: nowrap;
+}
+
+#listItems a, #listItems a:hover, #headerList a, #headerList a:hover {
+  white-space: nowrap;
+  overflow:hidden;
+  width: 120px;
+  text-overflow: ellipsis;
+  display:block;
+  text-decoration:none;
+}
+
+.orderTable tr:hover {
+  background: url('/images/linen-gray.png');
+}
+
+#headerList a, #headerList a:hover {
+  width:100px;
+}
+
+#headerList .sort a {
+  width:90px;
+}
+
+
+#curtainsContainer table, #curtainsContainer table td {
+  border: 1px solid white;
+  border-collapse:collapse;
+}
+
+#curtainsContainer table td {
+  padding: 3px;
+}
+
+#curtainsContainer .header {
+  height: 20px;
+}
+
+#table-body {
+  min-height: 500px;
+}
+
+#curtainsContainer.success {
+  background: url(/images/success-icon.png) no-repeat 10px 10px,url('/images/linen-light.png') repeat #3B3B42;
+}
+
+#curtainsContainer.error {
+  background: url(/images/warning-icon.png) no-repeat 10px 10px,url('/images/linen-light.png') repeat #3B3B42;
+}
+
+.sort {
+  cursor: pointer;
+}
+
+div.descending span {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #FFF;
+}
+
+div.ascending span {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #FFF;
+}
+
+.sort div {
+  float:left;
+}
+
+.sort div:last-child {
+  width: 20px;
+  padding-left: 5px;
+  height: 10px;
+  vertical-align:top;
+}
+
+.sort div.ascending {
+  padding-top:10px;
+}
+
+.sort div.descending {
+  margin-top: -10px;
+}
+
+.formBtn {
+	border: 1px solid #555;
+   background: rgba(0, 0, 0, 0.3);
+   color:white;
+   padding: 4px 16px;
+  -webkit-box-shadow: outset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: outset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: outset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.formBtn:hover {
+  text-decoration:none;
+  background: rgba(0, 0, 0, 0.5);
+  color:white;
+}
+
+.fix {
+  position:fixed;
+}
+
+.maxWidth {
+  width:  100%;
+  height: 100%;
+  background: url('/images/linen-gray.png') repeat fixed;
+}
+
+.center-menu {
+  padding: 0px 20px 20px 20px;
+}
+
+div.content {
+  padding:0px;	
+  height: 100%;
+  color: white;
+  opacity: .9;
+  margin: 0px 34px 0px 370px;
+  background: url(/images/background.png);
+  background: rgb(227, 218, 201);
+  -webkit-box-shadow: 0px -0px 15px rgba(39, 255, 255, 1);
+     -moz-box-shadow: 0px -0px 15px rgba(39, 255, 255, 1);
+          box-shadow: 0px -0px 15px rgba(39, 255, 255, 1);
+}
+
+div.content table td {
+  border-bottom: 1px solid #1D1E21;
+  border-top: 1px solid #4A4A54;
+}
+
+.itemLists li {
+  line-height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.itemLists li:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.itemLists {
+  margin-left: 0px;
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+.datepicker {
+  background: url(/images/linen-light.png);
+}
+
+#listItems tr {
+  cursor:pointer;
+  color: rgb(227, 218, 201);
+}
+
+#listItems tr:not(.currentUnder) td a {
+  color:black;
+}
+
+a, a:hover, #headerList th.tdHover a {
+  color:white;
+}
+
+#headerList a {
+  color:black;
+}
+
+#listItemsContainer {
+  position:fixed;
+  background: rgb(227, 218, 201);
+  margin-top: -1px;
+  border:0px;
+}
+
+#headerList th {
+  height:20px;
+  margin: 0px;
+  white-space:nowrap;
+}
+
+
+.currentUnder td, td.tdHover, th.tdHover {
+  background: url(/images/linen-light.png);
+}
+
+
+#listItems tr td.tdHover a {
+  color:white !important;
+}
+
+.filters {
+  position: fixed;
+  top: 20px;
+  right: -395px; 
+  width: 425px;
+  z-index: 400;
+}
+
+.export {
+  top: 10px;
+}
+
+.filter_header {
+  cursor:pointer;
+  height: 130px;
+  width: 30px;
+  padding-top: 5px;
+  text-align:center;
+  -webkit-border-radius: 10px 0px 0px 10px;
+   -moz-border-radius: 10px 0px 0px 10px;
+        border-radius: 10px 0px 0px 10px;
+  background: url(/images/linen-gray.png);
+  -webkit-box-shadow: 0px -0px 15px rgba(39, 255, 255, 1);
+     -moz-box-shadow: 0px -0px 15px rgba(39, 255, 255, 1);
+          box-shadow: 0px -0px 15px rgba(39, 255, 255, 1);
+  float:left;
+  z-index:301;
+}
+
+.picture_header {
+  height: 110px;
+}
+
+div.picture img {
+  max-width: 280px;
+}
+
+.export_header {
+  height:165px;
+}
+
+
+.filter_selection {
+  float:left;
+  background: url(/images/linen-gray.png);
+  padding:7px;
+  z-index: 300;
+  -webkit-box-shadow: 0px 0px 15px rgba(39, 255, 255, 1);
+     -moz-box-shadow: 0px 0px 15px rgba(39, 255, 255, 1);
+          box-shadow: 0px 0px 15px rgba(39, 255, 255, 1);
+}
+
+.filter_selection td {
+  border:0px !important;
+}
+
+.filter_header p, .menuHeader p {
+  width: 3px;
+  word-wrap:break-word;
+  margin:auto;
+  color:white;
+}
+
+th {
+  vertical-align:top;
+}
+
+.filters input[type=text] {
+  width: 144px !important;
+}
+
+.filter_table {
+  width: 380px;
+}
+
+.content table tr td:first-child, .content table tr th:first-child {
+  padding-left: 10px;
+}
+
+span.formControls {
+  z-index:  10; 
+  top:      0px;
+  right:    80px;
+  height:   30px;
+  position: fixed;
+  padding: 10px;
+  background: url(/images/linen-gray.png); 
+  -webkit-box-shadow: 0px 0px 15px rgba(39, 255, 255, 1);
+     -moz-box-shadow: 0px 0px 15px rgba(39, 255, 255, 1);
+          box-shadow: 0px 0px 15px rgba(39, 255, 255, 1);
+  -webkit-border-radius: 0px 0px 10px 10px;
+   -moz-border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 10px 10px;
+}
+
+.menu {
+  position:fixed;
+  float:left;
+  top:20px;
+  transition: 0.5s left 1s;
+  -webkit-transition: 0.5s left 1s; /* Safari */
+  z-index: 100;
+  -webkit-border-radius: 0px 10px 10px 0px;
+   -moz-border-radius: 0px 10px 10px 0px;
+        border-radius: 0px 10px 10px 0px;
+        width: 250px;
+}
+
+.menu ul {
+  background: url(/images/linen-light.png); 
+  list-style: none;
+  padding: 0px;
+  margin:0px;
+  width:220px;
+  z-index:302;
+  -webkit-box-shadow: 0px -0px 15px rgba(39, 255, 255, 1);
+     -moz-box-shadow: 0px -0px 15px rgba(39, 255, 255, 1);
+          box-shadow: 0px -0px 15px rgba(39, 255, 255, 1);
+}
+
+.menu ul li {
+  height: 30px;
+  border-top: 1px solid dimgray;
+  padding-left: 20px;
+  color:white;
+}
+
+.menu ul li:hover {
+  background: url(/images/linen-gray.png);
+}
+
+.menu ul li a, .menu ul li a:hover {
+  color:white;
+  text-decoration:none;
+  line-height:30px;
+  height: 30px;
+  width:200px;
+  display:block;
+}
+
+.pagination {
+  height: 30px;
+  min-width: 150px;
+  bottom: 0px;
+  position:fixed;
+  padding: 4px 10px 0px 10px;
+  text-align:center;
+  -webkit-border-radius: 10px 10px 0px 0px;
+   -moz-border-radius: 10px 10px 0px 0px;
+        border-radius: 10px 10px 0px 0px;
+  background: url(/images/linen-light.png);
+  -webkit-box-shadow: 0px -0px 15px rgba(39, 255, 255, 1);
+     -moz-box-shadow: 0px -0px 15px rgba(39, 255, 255, 1);
+          box-shadow: 0px -0px 15px rgba(39, 255, 255, 1);
+  margin:0px;
+  z-index:301;  
+}
+
+.leftFilters {
+  top: 270px;
+  position:fixed;
+  float:left;
+  left:0px;
+  width:350px;
+}
+
+.leftFilters .filter_table {
+  width: 340px;
+}
