@@ -4,10 +4,10 @@ DEFINE("INCPATH", getcwd()."/includes/");
 DEFINE("TEMPLATE", getcwd()."/templates/");
 DEFINE("PAGES", getcwd()."/pages/");
 
-$config['sql']['host'] = "localhost";
-$config['sql']['user'] = "adienerg_adi";
-$config['sql']['pass'] = "parole";
-$config['sql']['db']   = "adienerg_adi";
+$config['sql']['host'] = "";
+$config['sql']['user'] = "";
+$config['sql']['pass'] = "";
+$config['sql']['db']   = "";
 
 $config['language'] = Array();
 
